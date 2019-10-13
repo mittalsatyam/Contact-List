@@ -1,0 +1,43 @@
+.bu input{
+    color:yellowgreen;
+    background-color: black;
+    text-align: center
+}
+.yes h1{ 
+color:wheat;
+text-align: center
+}
+.del a {
+    color:black;
+    background-color: red;
+    text-align: center;
+   font-size: 23px;
+   text-decoration: none;
+   
+}
+.del{
+    text-align: center;
+    color:yellowgreen;
+    /* background-color:gray */
+}
+
+.contact li{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: blueviolet
+}
+.form input{
+height: 60px;
+width: 160px; 
+}
+.sub input{
+    background-color: green;
+}
+.cen{
+    text-align: center;
+}
+select{
+    height:60px;
+}

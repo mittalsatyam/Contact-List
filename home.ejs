@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>
+            <%= locals.title%>
+        </title>
+        <link rel="stylesheet" href="/css/home.css">
+    </head>
+    <body>
+
+        
+                <div class="yes">
+                        <h1>TO-DO DIARY</h1></p>
+            <ul>
+                <% for (let i of contact_list) { %> 
+
+                   <div class="contact"> 
+                        <li>
+                                <div class="bu">
+                            <input type="text" value="<%= i.discription %>">
+                                </div>
+                            <div class="bu">
+                           <input type="text" value=" <%= i.category%>">
+                            </div>
+                            <div class="bu">
+                           <input type="text" value="<%= i.duedate%>">
+                        </div>
+                    </li>
+                    </div>
+                    
+                    <div class="delete-button">
+                        
+                            <div class="del">
+                        <a href="/delete-contact/?id=<%= i.id %>">
+                            DELETE
+                        </a>
+                        
+                    </div>
+                    </div>
+                    <hr/>
+                <% } %>
+            </ul>
+        </div>
+        <div class="cen">
+        <form action='/create-todo' method="POST">
+            <div class="form">
+            <input type="text" name=discription placeholder="description"> 
+
+            <input type="text" name=category placeholder="category">
+            <input type="text" name=duedate placeholder="Due-Date /-/">
+            <p class="sub">
+            <input type="submit" value="ADD">
+        </p>
+            </div>
+            </form>
+        </div>
+        <script type="text/javascript" src="/js/home.js"></script>
+    </body>
+</html>
+
+
+</body>
+
+</html>
